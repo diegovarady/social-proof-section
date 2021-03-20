@@ -13,6 +13,8 @@ body {
   background: url(images/bg-pattern-top-desktop.svg) no-repeat top left, url(images/bg-pattern-bottom-desktop.svg) no-repeat right bottom;
   display: grid;
   grid-template-areas: "left right" "bottom bottom" "attribution attribution"; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: space-evenly; 
   align-content: space-between;
 }
@@ -40,6 +42,24 @@ body {
 
 .top-right {
   grid-area: right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;  
+  row-gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-right .rate {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.top-right .rate p {
+  display: inline-block;
 }
 
 .bottom {
