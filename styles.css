@@ -20,6 +20,7 @@ body {
 }
 
 .top-left {
+  height: 50vh;
   grid-area: left;
   display: flex;
   flex-direction: column;
@@ -27,39 +28,68 @@ body {
   align-items: center;  
 }
 
+.top-left div {
+  width: 60%;
+}
+
 .top-left .main-p {
   font-weight: 700;
   font-size: 50px;
   color: hsl(300, 43%, 22%);
   text-align: left;
+  margin-bottom: 0.25em;  
 }
 
-.top-left p {
+.top-left .pi {
   font-weight: 500;
   font-size: 15px;
   color: hsl(303, 10%, 53%);
+  line-height: 1.5;
 }
 
 .top-right {
+  height: 50vh;
   grid-area: right;
-  display: grid;
+  display: grid;  
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;  
-  row-gap: 1em;
+  grid-template-rows: repeat(7,1fr);  
+  row-gap: 12px;
   justify-content: center;
   align-items: center;
 }
 
 .top-right .rate {
   background-color: hsl(300, 24%, 96%);
-  display: flex;
+  width: 64%;
+  display: flex;  
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .top-right .rate p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
   display: inline-block;
+  padding: 1.2em;
+}
+
+.top-right .rate img {
+  padding: 5px;
+}
+
+.pri {
+  grid-row: 3;  
+}
+
+.sec {
+  grid-row: 4;
+  margin-left: 8%;
+ }
+
+.tre {
+  grid-row: 5;
+  margin-left: 16%;
 }
 
 .bottom {
