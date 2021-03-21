@@ -162,3 +162,26 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 1200px) {
+  .top-right .rate {    
+    width: 80%;    
+  }
+  
+  .sec {    
+    margin-left: 0%;
+   }
+  
+  .tre {    
+    margin-left: 0%;
+  }
+
+  .feed-top img {    
+    width: 80%;
+    margin-right: 0em;
+  }
+
+  .feed-name {
+    padding-left: 1em;
+  }
+}
