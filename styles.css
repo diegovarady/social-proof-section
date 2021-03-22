@@ -185,3 +185,70 @@ body {
     padding-left: 1em;
   }
 }
+
+@media screen and (max-width: 900px) {
+  body { 
+    height: auto;   
+    background: url(images/bg-pattern-top-mobile.svg) no-repeat top left, url(images/bg-pattern-bottom-mobile.svg) no-repeat right bottom;    
+    grid-template-areas: "left left" "right right" "bottom bottom" "attribution attribution"; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;  
+  }
+
+  .top-left {
+    height: auto;
+    padding-top: 10%;
+  }
+
+  .top-left div {
+    width: 80%;
+  }
+
+  .top-left .main-p {    
+    text-align: center;
+    margin-bottom: 0.5em;  
+  }
+
+  .top-left .pi {
+    text-align: center;
+  }
+
+  .top-right {
+    height: auto;    
+    grid-template-rows: repeat(3,1fr);  
+    row-gap: 20px;
+    padding: 4% 0;
+  }
+
+  .top-right .rate {    
+    width: 80%;
+    margin: 0 auto;   
+  }  
+  
+  .pri {
+    grid-row: 1;    
+  }
+  
+  .sec {
+    grid-row: 2;    
+   }
+  
+  .tre {
+    grid-row: 3;
+    
+  }
+
+  .bottom {    
+    height: auto;
+    padding-bottom: 2%;
+  }
+
+  .second {    
+    margin-top: 0px;
+    height: 100%;
+  }
+  
+  .third {    
+    margin-top: 0px;
+  }
+}
