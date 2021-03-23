@@ -58,7 +58,7 @@ body {
 
 .top-right .rate {
   background-color: hsl(300, 24%, 96%);
-  width: 64%;
+  width: 75%;
   display: flex;  
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ body {
 }
 
 .top-right .rate img {
-  padding: 5px;
+  padding: 4px;
 }
 
 .pri {
@@ -109,7 +109,7 @@ body {
   color: hsl(300, 24%, 96%);
   font-weight: 500;
   font-size: 15px;
-  margin: 2em;  
+  margin: 2.1em;  
   line-height: 1.5;
 }
 
@@ -165,7 +165,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .top-right .rate {    
-    width: 80%;    
+    width: 95%;    
   }
   
   .sec {    
@@ -217,11 +217,10 @@ body {
     height: auto;    
     grid-template-rows: repeat(3,1fr);  
     row-gap: 20px;
-    padding: 4% 0;
+    padding: 10% 0;
   }
 
-  .top-right .rate {    
-    width: 80%;
+  .top-right .rate {
     margin: 0 auto;   
   }  
   
@@ -256,6 +255,10 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .top-left div {
+    width: 90%;
+  }
+
   .bottom {    
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;  
@@ -272,5 +275,49 @@ body {
   
   .third {
     grid-column: 1 / span 1;
+  }
+
+  .feedbk {
+    width: 90%;
+    margin: auto;
+  }
+
+  .feed-top {
+    grid-template-columns: auto 1fr;
+    
+  }
+  
+  .feed-top img {
+    width: 60%;
+  }  
+}
+
+@media screen and (max-width: 500px) {
+  .top-right .rate {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .top-right .rate div {
+    padding-top: 1.1em;
+  }
+
+  .top-right .rate p {
+    padding-top: 0.4em;
+    padding-bottom: 1.1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top-left {    
+    padding-top: 18%;
+  }
+
+  .top-left div {
+    width: 95%;
+  }
+
+  .top-left .main-p {    
+    font-size: 40px;    
   }
 }
